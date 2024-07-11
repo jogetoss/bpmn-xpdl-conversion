@@ -1,0 +1,57 @@
+[
+    {
+        "title": "@@org.joget.marketplace.BpmnXpdlConversion.config@@",
+        "properties": [
+            {
+                "label": "@@org.joget.marketplace.BpmnXpdlConversion.sourceFile@@",
+                "type": "header"
+            },
+            {
+                "name": "formDefIdSourceFile",
+                "label": "@@org.joget.marketplace.BpmnXpdlConversion.formDefId@@",
+                "type": "selectbox",
+                "required": "True",
+                "options_ajax": "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/forms/options"
+            },
+            {
+                "name" : "sourceFileFieldId", 
+                "label" : "@@org.joget.marketplace.BpmnXpdlConversion.fieldId@@",
+                "type" : "selectbox",
+                "options_ajax_on_change" : "formDefId:formDefIdSourceFile",
+                "options_ajax" : "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/form/columns/options",
+                "required" : "True"
+            },
+            {
+                "name" : "sourceFileRecordId",
+                "label" : "@@org.joget.marketplace.BpmnXpdlConversion.recordId@@",
+                "type" : "textfield",
+                "description" : "@@org.joget.marketplace.BpmnXpdlConversion.recordId.desc@@"
+            },
+            {
+                "label": "@@org.joget.marketplace.BpmnXpdlConversion.targetFile@@",
+                "type": "header"
+            },
+            {
+                "name": "formDefIdOutputFile",
+                "label": "@@org.joget.marketplace.BpmnXpdlConversion.formDefId@@",
+                "type": "selectbox",
+                "required": "True",
+                "options_ajax": "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/forms/options"
+            },
+            {
+                "name" : "outputFileFieldId",
+                "label" : "@@org.joget.marketplace.BpmnXpdlConversion.fieldId@@",
+                "type" : "selectbox",
+                "options_ajax_on_change" : "formDefId:formDefIdOutputFile",
+                "options_ajax" : "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/form/columns/options",
+                "required" : "True"
+            },
+            {
+                "name" : "outputFileRecordId",
+                "label" : "@@org.joget.marketplace.BpmnXpdlConversion.recordId@@",
+                "type" : "textfield",
+                "description" : "@@org.joget.marketplace.BpmnXpdlConversion.recordId.desc@@"
+            }
+        ]
+    }
+]
