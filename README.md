@@ -1,6 +1,8 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The BPMN to XPDL Conversion Plugin is used to convert BPMN xml to XPDL xml format to be uploaded to Joget Process Builder.
+
+To setup and configure this plugin, please see the [documentation](https://dev.joget.org/community/display/marketplace/BPMN+to+XPDL+Conversion+Plugin)
 
 # Getting Help
 
